@@ -1,0 +1,53 @@
+per(n, w = $base-width)
+  percentage(n / w)
+
+
+// photoshop上で指定されている余白を/2する
+div(n)
+  n / 2px
+
+
+// placeholder用
+placeholder(col)
+  &:placeholder-shown
+    color col
+
+  &::placeholder
+    color col
+
+  &::-webkit-input-placeholder
+    color col
+
+  &:-ms-input-placeholder
+    color col
+
+  &:-moz-placeholder
+    color col
+    opacity 1
+
+  &::-moz-placeholder
+    color col
+    opacity 1
+
+// breakpoint
+breakpoint(bpName)
+  for name in bpName
+    if name == 'sm'   // small-width
+      @media only screen and (max-width: bkp_s)
+        {block}
+    if name == 'smh'  // small-height
+      @media only screen and (max-height: bkp_sh)
+        {block}
+    if name == 'md'   // middle-width
+      @media only screen and (min-width: bkp_s + 1) and (max-width: bkp_m)
+        {block}
+    if name == 'mdh'  // middle-height
+      @media only screen and (min-height: bkp_sh + 1) and (max-height: bkp_mh)
+        {block}
+    if name == 'lg'   // large-width
+      @media only screen and (min-width: bkp_m + 1) and (max-width: bkp_l)
+        {block}
+    if name == 'lgh'  // large-height
+      @media only screen and (min-height: bkp_mh + 1) and (max-height: bkp_lh)
+        {block}
+
