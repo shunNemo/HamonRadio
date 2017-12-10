@@ -4,7 +4,7 @@
   "description": "HamonRadio website",
   "main": "index.js",
   "repository": "https://github.com/syncM-Pgmg/HamonRadio.git",
-  "author": "HamonRadio <hamonradio@gmail.com>",
+  "author": "HamonRadio <hamon.radio@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "",
