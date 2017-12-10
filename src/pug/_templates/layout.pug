@@ -1,0 +1,21 @@
+include /_component/index
+include /_partial/index
+include /_mixin/index
+
+block vars
+
+doctype html
+html(lang="ja")
+  head
+    block meta
+      +meta
+
+    block script
+      include /_include/ga.html
+
+  body
+    +fbsdk
+    main.l-wrapper.p-hr__box--top
+      block main
+
+    +footer

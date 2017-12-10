@@ -1,36 +1,29 @@
-doctype html
-html(lang=ja)
-  head
-    meta(charset='utf-8').
-    title= 'Hamon Radio'
-    meta(name='viewport', content='width=device-width, initial-scale=1 ,user-scalable=no')
+extend /_templates/layout
 
-    meta(name='description' content= '')
-    meta(name='keywords' content= '')
+block vars
 
-    meta(property='og:title' content= '')
-    meta(property='og:site_name' content= '')
-    meta(property='og:type' content= '')
-    meta(property='og:description' '')
-    meta(property='og:url' content= '')
-    meta(property='og:image' content= '')
+block main
+  h1.p-hr__label--logo
+    +logo
 
-    meta(property='twitter:card' content= '')
-    meta(property='twitter:title' content= '')
-    meta(property='twitter:site' content= '')
-    meta(property='twitter:description' content= '')
+  p.p-hr__box--description
+    | We are Hamon Radio - an independent internet radio station based in Tokyo.
+    | We started Hamon Radio to create a third place where people of all the world share and communicate with each other via music we select from the world, particularly Japan.
+    | "Hamon" means ripple in Japanese.When a drip falls in water, the ripple expands gently and gradually turns to greater influence.
+    | We hope Hamon Radio can be like this very first drip.
 
-    link(rel='stylesheet', href='')
-    link(rel='icon' type='image/ico' href='favicon.ico')
-    script(src='')
+  div.p-hr__box--contents
+    section.p-hr__box--youtube
+      h2.c-label__hdr--contents
+        | Youtube
+      ul.c-list__card--with-ttl.js--list-youtube
 
+    section.p-hr__box--instagram
+      h2.c-label__hdr--contents
+        | Instagram
+      ul.c-list__card--photo.js--list-instagram
 
-  body
-    <!--[if lt IE 8]>
-    <![endif]-->
-
-    header
-
-    main#contents
-
-    footer
+    section.p-hr__box--mixcloud
+      h2.c-label__hdr--contents
+        | Mixcloud
+      ul.c-list__card--mixcloud.js--list-mixcloud

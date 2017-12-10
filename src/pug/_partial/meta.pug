@@ -1,0 +1,28 @@
+mixin meta
+  - var data = htmlWebpackPlugin.options.data[htmlWebpackPlugin.options.page] || htmlWebpackPlugin.options.data.common
+
+  title= data.title
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no")
+  meta(name="title" content=data.title)
+  meta(name="description" content=data.description)
+  meta(name="keywords" content=data.keywords)
+  meta(property="og:url" content=data.url)
+  meta(property="og:type" content="website")
+  meta(property="og:title" content=data.title)
+  meta(property="og:description" content=data.description)
+  meta(property="og:image" content=data.img)
+  meta(property="og:site_name" content=data.sitename)
+  meta(property="fb:app_id" content=data.fbappid)
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name='twitter:title', content=data.title)
+  meta(name='twitter:description' content=data.description)
+  meta(name='twitter:image', content=data.img)
+
+  link(rel="shortcut icon", href="/favicon.ico")
+  link(rel="icon", sizes="96x96", href="/favicon.png")
+  link(rel="apple-touch-icon", sizes="180x180", href="/touch-icon.png")
+
+  // Google Fonts
+  link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans")
