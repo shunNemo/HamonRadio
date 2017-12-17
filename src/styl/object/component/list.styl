@@ -30,22 +30,75 @@
       width calc(100% - 40px)
 
     li
+      position relative
       width 300px
+      height 300px
       margin-bottom 20px
       line-height 0
+      overflow hidden
 
       +breakpoint(sm)
         width 100%
+        height auto
         margin-bottom 10px
 
       +breakpoint(md)
         width 100%
+        height auto
 
       +breakpoint(lg)
         width calc(50% - 10px)
+        height auto
+
 
     a
       display block
 
     img
+      position absolute
+      top 50%
+      left 50%
       width 100%
+      height auto
+      transform translate(-50%,-50%)
+
+      +breakpoint(sm)
+        position relative
+        top 0
+        left 0
+        transform translate(0,0)
+
+
+      +breakpoint(md)
+        position relative
+        top 0
+        left 0
+        transform translate(0,0)
+
+      +breakpoint(lg)
+        position relative
+        top 0
+        left 0
+        transform translate(0,0)
+
+    .c-list__img
+      &--landscape
+        width auto
+        height 100%
+
+        +breakpoint(sm)
+          width 100%
+          height auto
+
+        +breakpoint(md)
+          width 100%
+          height auto
+
+        +breakpoint(lg)
+          width 100%
+          height auto
+
+      &--portrait
+        width 100%
+        height auto
+

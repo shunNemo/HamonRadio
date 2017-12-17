@@ -1151,14 +1151,18 @@ dd {
 }
 
 .c-list__card--photo li {
+  position: relative;
   width: 300px;
+  height: 300px;
   margin-bottom: 20px;
   line-height: 0;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 458px) {
   .c-list__card--photo li {
     width: 100%;
+    height: auto;
     margin-bottom: 10px;
   }
 }
@@ -1166,12 +1170,14 @@ dd {
 @media only screen and (min-width: 459px) and (max-width: 680px) {
   .c-list__card--photo li {
     width: 100%;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 681px) and (max-width: 980px) {
   .c-list__card--photo li {
     width: calc(50% - 10px);
+    height: auto;
   }
 }
 
@@ -1180,7 +1186,70 @@ dd {
 }
 
 .c-list__card--photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 458px) {
+  .c-list__card--photo img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 680px) {
+  .c-list__card--photo img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 980px) {
+  .c-list__card--photo img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.c-list__card--photo .c-list__img--landscape {
+  width: auto;
+  height: 100%;
+}
+
+@media only screen and (max-width: 458px) {
+  .c-list__card--photo .c-list__img--landscape {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 680px) {
+  .c-list__card--photo .c-list__img--landscape {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 980px) {
+  .c-list__card--photo .c-list__img--landscape {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.c-list__card--photo .c-list__img--portrait {
+  width: 100%;
+  height: auto;
 }
 
 .p-hr__box--top {
@@ -1252,6 +1321,12 @@ dd {
 }
 
 @media only screen and (min-width: 459px) and (max-width: 680px) {
+  .p-hr__txt--ftrcopy {
+    margin: 9px 20px;
+  }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 980px) {
   .p-hr__txt--ftrcopy {
     margin: 9px 20px;
   }
