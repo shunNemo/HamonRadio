@@ -1,0 +1,51 @@
+.c-list__card
+
+  &--mixcloud
+    margin 0 auto
+
+    +breakpoint(sm)
+      max-width 458px
+
+    +breakpoint(md)
+      max-width 458px
+
+    +breakpoint(lg)
+      width calc(100% - 40px)
+
+  &--photo
+    display flex
+    margin 0 auto
+    flex-wrap wrap
+    justify-content space-between
+
+    +breakpoint(sm)
+      max-width 458px
+      flex-direction column
+
+    +breakpoint(md)
+      max-width 458px
+      flex-direction column
+
+    +breakpoint(lg)
+      width calc(100% - 40px)
+
+    li
+      width 300px
+      margin-bottom 20px
+      line-height 0
+
+      +breakpoint(sm)
+        width 100%
+        margin-bottom 10px
+
+      +breakpoint(md)
+        width 100%
+
+      +breakpoint(lg)
+        width calc(50% - 10px)
+
+    a
+      display block
+
+    img
+      width 100%

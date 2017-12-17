@@ -46,6 +46,7 @@
     "webpack-dev-server": "2.4.5"
   },
   "dependencies": {
-    "js-cookie": "^2.1.4"
+    "js-cookie": "^2.1.4",
+    "whatwg-fetch": "^2.0.3"
   }
 }

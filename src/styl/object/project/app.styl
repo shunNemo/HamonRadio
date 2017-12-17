@@ -7,6 +7,12 @@
   &--contents
     margin-bottom 100px
 
+    +breakpoint(sm)
+      margin 0 10px 50px 10px
+
+    +breakpoint(md)
+      margin 0 20px 50px 20px
+
   &--description
     max-width 458px
     margin 0 auto 120px auto
@@ -14,6 +20,9 @@
     line-height (24/12)
     letter-spacing 0.2px
     font-size 12px
+
+    +breakpoint(sm)
+      margin 0 10px 60px 10px
 
   &--footer
     box-sizing border-box
@@ -38,3 +47,9 @@
   text-align right
   font-size 10px
   color $color-hr-white
+
+  +breakpoint(sm)
+    margin 9px 10px
+
+  +breakpoint(md)
+    margin 9px 20px

@@ -2,7 +2,12 @@
 .c-label
   &__hdr
     &--contents
-      margin 0
+      margin 0 auto 20px auto
       font-size 14px
       line-height 1
 
+      +breakpoint(md)
+        max-width 458px
+
+      +breakpoint(lg)
+        width calc(100% - 40px)
